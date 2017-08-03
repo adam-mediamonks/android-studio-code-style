@@ -361,6 +361,36 @@
             <match>
               <AND>
                 <METHOD>true</METHOD>
+                <NAME>onSaveInstanceState</NAME>
+              </AND>
+            </match>
+          </rule>
+        </section>
+        <section>
+          <rule>
+            <match>
+              <AND>
+                <NAME>onActivityResult</NAME>
+                <OVERRIDDEN />
+              </AND>
+            </match>
+          </rule>
+        </section>
+        <section>
+          <rule>
+            <match>
+              <AND>
+                <NAME>onRestart</NAME>
+                <OVERRIDDEN />
+              </AND>
+            </match>
+          </rule>
+        </section>
+        <section>
+          <rule>
+            <match>
+              <AND>
+                <METHOD>true</METHOD>
                 <PUBLIC>true</PUBLIC>
               </AND>
             </match>
