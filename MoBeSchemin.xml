@@ -1,4 +1,6 @@
 <code_scheme name="MoBeSchemin">
+  <option name="FIELD_NAME_PREFIX" value="_" />
+  <option name="STATIC_FIELD_NAME_PREFIX" value="s" />
   <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="99" />
   <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="99" />
   <option name="PACKAGES_TO_USE_IMPORT_ON_DEMAND">
@@ -292,6 +294,17 @@
         <section>
           <rule>
             <match>
+              <AND>
+                <METHOD>true</METHOD>
+                <NAME>getInstance</NAME>
+                <STATIC>true</STATIC>
+              </AND>
+            </match>
+          </rule>
+        </section>
+        <section>
+          <rule>
+            <match>
               <CONSTRUCTOR>true</CONSTRUCTOR>
             </match>
           </rule>
@@ -475,6 +488,19 @@
             <match>
               <AND>
                 <METHOD>true</METHOD>
+                <STATIC>true</STATIC>
+              </AND>
+            </match>
+          </rule>
+        </section>
+        <section>
+          <rule>
+            <match>
+              <AND>
+                <FIELD>true</FIELD>
+                <FINAL>true</FINAL>
+                <NAME>CREATOR</NAME>
+                <PUBLIC>true</PUBLIC>
                 <STATIC>true</STATIC>
               </AND>
             </match>
