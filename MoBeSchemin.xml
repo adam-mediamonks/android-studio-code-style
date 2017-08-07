@@ -386,6 +386,16 @@
           <rule>
             <match>
               <AND>
+                <NAME>onRestoreInstanceState</NAME>
+                <OVERRIDDEN />
+              </AND>
+            </match>
+          </rule>
+        </section>
+        <section>
+          <rule>
+            <match>
+              <AND>
                 <NAME>onActivityResult</NAME>
                 <OVERRIDDEN />
               </AND>
